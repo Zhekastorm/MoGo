@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-	
-    <script src="script.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
 	<script src="https://kit.fontawesome.com/59933ad380.js" crossorigin="anonymous" defer></script>
+	<script src="script.js" defer></script>
 
     <title>MoGo</title>
 </head>
 <body>
 
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
 
         <div class="header__inner">
@@ -24,13 +27,13 @@
 			<div class="burger__line second"></div>
 			<div class="burger__line third"></div>
 			<div class="burger__line fourth"></div>
-            <div class="header__logo">MoGo</div>
+            <div class="header__logo" id="btn__logo" type="button">MoGo</div>
 			<nav class="main__menu">
-				<a class="nav__link" href="#">about</a>
-				<a class="nav__link" href="#">service</a>
-				<a class="nav__link" href="#">work</a>
-				<a class="nav__link" href="#">blog</a>
-				<a class="nav__link" href="#">contact</a>
+				<a class="nav__link" data-scroll="#about" href="#">about</a>
+				<a class="nav__link" data-scroll="#service" href="#">service</a>
+				<a class="nav__link" data-scroll="#works" href="#">work</a>
+				<a class="nav__link" data-scroll="#blog" href="#">blog</a>
+				<a class="nav__link" data-scroll="#contact" href="#">contact</a>
 			</nav>
 			<nav class="menu__icon">
 				<a class="nav__link nav__link--icon" href="#">
@@ -78,7 +81,7 @@
 <section class="section">
 	<div class="container">
 
-		<div class="section__inner">
+		<div class="section__inner" id="about">
 			<h2 class="section__suptitle">what we do</h2>
 			<h1 class="section__title">Story about us</h1>
 			<div class="section__text">
@@ -219,7 +222,7 @@
 <section class="section">
 	<div class="container">
 
-		<div class="section__inner">
+		<div class="section__inner" id="service">
 			<h2 class="section__suptitle">Service</h2>
 			<h1 class="section__title">what we do</h1>
 			<div class="section__text">
@@ -234,7 +237,7 @@
 			<div class="service__item">
 
 				<div class="accordion">
-					<div class="accordion__item">
+					<div class="accordion__item" data-collapse="#accordion_1">
 						<div class="accordion__header">
 							<img class="accordion__icon" src="image/Иконки/What we do_1.png" alt="">
 							<div class="accordion__title">Photography</div>
@@ -243,7 +246,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
-					<div class="accordion__item">
+					<div class="accordion__item" data-collapse="#accordion_2">
 						<div class="accordion__header">
 							<img class="accordion__icon" src="image/Иконки/What we do_2.png" alt="">
 							<div class="accordion__title">creativity</div>
@@ -252,7 +255,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
-					<div class="accordion__item">
+					<div class="accordion__item" data-collapse="#accordion_3">
 						<div class="accordion__header">
 							<img class="accordion__icon" src="image/Иконки/What we do_3.png" alt="">
 							<div class="accordion__title">web design</div>
@@ -269,10 +272,8 @@
 	</div>
 </section>
 
-
 <div class="section__gray">
 	<div class="container">
-
 		<div class="reviews">
 			<div class="reviews__slider">
 
@@ -288,12 +289,22 @@
 					</div>
 				</div>
 
+				<div>
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img class="reviews__img" src="image/Иконки/What we do_4.png" alt="">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+							<div class="reviews__prof">Joshua Earle</div>
+						</div>
+					</div>
+			    </div>
+
 			</div>
 		</div>
-
 	</div>
 </div>
-
 
 <section class="section">
 	<div class="container">
@@ -422,10 +433,10 @@
 </div>
 
 
-<section class="section">
+<section class="section section--works">
 	<div class="container">
 
-		<div class="section__inner">
+		<div class="section__inner" id="works">
 			<h2 class="section__suptitle">What we do</h2>
 			<h1 class="section__title">some of our work</h1>
 			<div class="section__text">
@@ -505,23 +516,38 @@
 </section>
 
 
-<div class="section section--reviews">
-	<div class="container">
+<!--<div class="section section&#45;&#45;reviews">-->
+<!--	<div class="container">-->
+<!--		<div class="reviews">-->
+<!--			<div class="reviews__slider">-->
 
-		<div class="reviews">
-			<div class="reviews__item">
-				<div class="reviews__photo">
-					<img class="reviews__img--circle" src="image/Comment_1.png" alt="">
-				</div>
-				<div class="reviews__content">
-					<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-					<div class="reviews__prof">Joshua Earle</div>
-				</div>
-			</div>
-		</div>
+<!--				<div>-->
+<!--					<div class="reviews__item">-->
+<!--						<div class="reviews__photo">-->
+<!--							<img class="reviews__img&#45;&#45;circle" src="image/Comment_1.png" alt="">-->
+<!--						</div>-->
+<!--						<div class="reviews__content">-->
+<!--							<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>-->
+<!--							<div class="reviews__prof">Joshua Earle</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div>-->
+<!--					<div class="reviews__item">-->
+<!--						<div class="reviews__photo">-->
+<!--							<img class="reviews__img&#45;&#45;circle" src="image/Comment_1.png" alt="">-->
+<!--						</div>-->
+<!--						<div class="reviews__content">-->
+<!--							<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>-->
+<!--							<div class="reviews__prof">Joshua Earle</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
 
-	</div>
-</div>
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
 
 
 <section class="section section--clients">
@@ -574,7 +600,7 @@
 <section class="section">
 	<div class="container">
 
-		<div class="section__inner">
+		<div class="section__inner" id="blog">
 			<h2 class="section__suptitle">Our stories</h2>
 			<h1 class="section__title">Latest blog</h1>
 		</div>
@@ -675,7 +701,7 @@
 </div>
 
 
-<footer class="footer">
+<footer class="footer" id="contact">
 	<div class="container">
 		<div class="footer__inner">
 
