@@ -283,7 +283,7 @@ label{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 70px -15px;
+
 }
 
 .cards__item{
@@ -1272,6 +1272,9 @@ input:focus{
 	}
 
 	/* Footer */
+	.footer{
+		padding-top: 30px;
+	}
 	.footer__inner{
 		flex-wrap: wrap;
 		justify-content: flex-start;
@@ -1283,7 +1286,7 @@ input:focus{
 		width: 50%;
 	}
 	.footer__item--third{
-		width: 27%;
+		width: auto;
 	}
 
 }
@@ -1389,6 +1392,9 @@ input:focus{
 	}
 
 	/* Section */
+	.section{
+		padding: 30px 0;
+	}
 
 	.section__title{
 		font-size: 20px;
@@ -1421,6 +1427,9 @@ input:focus{
 	}
 
 	/* Devices */
+	.section--devices{
+		padding-bottom: 0;
+	}
 	.devices__item{
 		max-width: 100%;
 		height: auto;
@@ -1431,6 +1440,9 @@ input:focus{
 	}
 
 	/* Service */
+	.section--service{
+		padding-top: 90px;
+	}
 	.service{
 		flex-wrap: wrap;
 	}
