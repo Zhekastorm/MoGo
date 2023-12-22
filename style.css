@@ -1478,10 +1478,18 @@ input:focus{
 
 	/* Clients */
 	.clients__item{
-		padding: 120px 45px 0 0;
+		padding: 120px 0 0 0;
+		margin-bottom: 40px;
 	}
 	.clients__img{
-		left: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.clients__name, .clients__prof{
+		text-align: center;
+	}
+	.clients__prof:after{
+		margin: 18px auto;
 	}
 
 	/* Blog */
