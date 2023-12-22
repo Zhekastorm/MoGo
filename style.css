@@ -577,9 +577,13 @@ label{
 	border: 3px solid #95e1d3;
 }
 
-.reviews__img--circle{
+.reviews__photo--circle{
 	border: 3px solid #95e1d3;
 	border-radius: 50%;
+}
+
+.reviews__img--circle{
+	border: none;
 }
 
 .reviews__content{
@@ -616,9 +620,10 @@ label{
 
 .slick-dots{
 	display: flex;
-	width: 50%;
+	justify-content: center;
+	width: 100%;
 	position: absolute;
-	bottom: auto;
+	bottom: -50px;
 	right: 0;
 	z-index: 2;
 	margin: 0;
@@ -1229,9 +1234,14 @@ input:focus{
 		right: -36px;
 	}
 
-	/* Service */
-
-	/* Reviews */
+	/* Reviews*/
+	.reviews__item{
+		padding-left: 190px;
+	}
+	.reviews__img--circle{
+		width: 153px;
+		height: auto;
+	}
 
 	/* Logos */
 	.logos__item{
@@ -1388,8 +1398,6 @@ input:focus{
 		font-size: 15px;
 	}
 
-	/* Cards */
-
 	/* Status */
 	.status__inner{
 		flex-wrap: wrap;
@@ -1438,12 +1446,17 @@ input:focus{
 	.reviews__item{
 		padding: 135px 10px 0 10px;
 	}
-	.reviews__photo{
+	.reviews__photo, .reviews__photo--circle{
 		top: 60px;
 		left: 10px;
 	}
 	.reviews__img{
 		padding: 20px;
+	}
+	.reviews__img--circle{
+		width: 110px;
+		height: auto;
+		padding: 0;
 	}
 
 	/* Logos */
