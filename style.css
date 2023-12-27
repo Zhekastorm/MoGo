@@ -155,12 +155,11 @@ label{
 }
 
 .nav__link--icon:hover .nav__signature{
-	opacity: 1;
+	transform: scale3d(1, 1, 1);
 }
 
 .nav__link--icon{
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	position: relative;
 }
@@ -171,7 +170,8 @@ label{
 	align-items: center;
 	position: absolute;
 	padding: 3px 5px;
-	margin-top: 30px;
+	top: 47px;
+	margin-left: -20px;
 	border: 0;
 	background-color: black;
 	color: white;
@@ -179,19 +179,19 @@ label{
 	text-align: center;
 	font-weight: bold;
 
-	opacity: 0;
-	transition: opacity .2s ease-in;
+	transform: scale3d(1, 0, 1);
+	transition: transform .2s ease-in;
 }
 
 .nav__signature::before{
 	content: "";
 	width: 8px;
 	height: 8px;
-	border-top: 2px solid black;
-	border-right: 2px solid black;
+
+	background-color: black;
 	position: absolute;
 	top: -2px;
-	z-index: 1000;
+	z-index: 1;
 	transform: rotate(-45deg);
 }
 
@@ -1232,6 +1232,10 @@ input:focus{
 		margin-left: 30px;
 	}
 
+	.nav__signature{
+		display: none;
+	}
+
 	/* Intro */
 	.intro{
 		height: 900px;
@@ -1420,6 +1424,10 @@ input:focus{
 	.nav__link--icon i{
 		color: black;
 		font-size: 20px;
+	}
+
+	.nav__link--icon:hover i{
+		color: #f7cb88;
 	}
 
 	.nav__link::after{
