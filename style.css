@@ -150,6 +150,10 @@ label{
 	transform: scale3d(1,1,1);
 }
 
+.nav__link .active::after{
+	transform: scale3d(1,1,1);
+}
+
 .nav__link--icon::after{
 	display: none;
 }
@@ -761,7 +765,7 @@ label{
 
 .works__img{
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	transition: opacity .3s linear;
 	overflow: hidden;
