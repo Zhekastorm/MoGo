@@ -1292,6 +1292,9 @@ input:focus{
 	}
 
 	/* Works */
+    .section--works{
+	   padding-bottom: 0;
+    }
 	.works{
 		flex-wrap: wrap;
 	}
@@ -1317,7 +1320,7 @@ input:focus{
 	.footer__inner{
 		flex-wrap: wrap;
 		justify-content: flex-start;
-        	padding-bottom: 10px;
+        padding-bottom: 10px;
 	}
 	.footer__item--first{
 		width: 100%;
@@ -1328,9 +1331,9 @@ input:focus{
 	.footer__item--third{
 		width: auto;
 	}
-    	.copyright{
+    .copyright{
         padding: 10px 0;
-    	}
+    }
 
 }
 
@@ -1525,6 +1528,10 @@ input:focus{
 	.logos__item{
 		width: 50%;
 	}
+    /* Works */
+    .section--works{
+	   padding-bottom: 0;
+    }
 
 	/* Clients */
 	.clients__item{
@@ -1572,7 +1579,9 @@ input:focus{
 	.instagram__item{
 		border: 10px solid #f8f8f8;
 	}
-
+    .copyright{
+        padding: 10px 0;
+    }
 }
 
 
