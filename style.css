@@ -1432,7 +1432,7 @@ input:focus{
 	/* Intro */
     section.intro{
         height: auto;
-        padding: 100px 0 30px;
+        padding: 140px 0 30px;
 	}
 	.intro__suptitle{
 		font-size: 30px;
