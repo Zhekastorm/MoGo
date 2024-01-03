@@ -93,6 +93,12 @@ label{
 	font-size: 30px;
 	color: white;
 	font-weight: bold;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.header__logo:hover{
+    color: #f7cb88;
 }
 
 .menu{
