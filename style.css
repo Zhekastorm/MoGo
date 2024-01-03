@@ -1317,7 +1317,7 @@ input:focus{
 	.footer__inner{
 		flex-wrap: wrap;
 		justify-content: flex-start;
-        padding-bottom: 10px;
+        	padding-bottom: 10px;
 	}
 	.footer__item--first{
 		width: 100%;
@@ -1328,9 +1328,9 @@ input:focus{
 	.footer__item--third{
 		width: auto;
 	}
-    .copyright{
+    	.copyright{
         padding: 10px 0;
-    }
+    	}
 
 }
 
